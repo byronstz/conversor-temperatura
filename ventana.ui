@@ -28,7 +28,7 @@
        <item>
         <widget class="QLCDNumber" name="out_cent">
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 168, 61);
+          <string notr="true">background-color: rgb(220, 168, 61);
 alternate-background-color: rgb(255, 205, 7);
 color: rgb(0, 0, 0);</string>
          </property>
@@ -36,6 +36,9 @@ color: rgb(0, 0, 0);</string>
        </item>
        <item>
         <widget class="QDial" name="in_cent">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0, 170, 0);</string>
+         </property>
          <property name="minimum">
           <number>-18</number>
          </property>
@@ -53,7 +56,7 @@ color: rgb(0, 0, 0);</string>
        <item>
         <widget class="QLCDNumber" name="out_fahr">
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(0, 153, 255);
+          <string notr="true">background-color: rgb(0, 175, 255);
 color: rgb(0, 0, 0);</string>
          </property>
          <property name="value" stdset="0">
@@ -63,6 +66,9 @@ color: rgb(0, 0, 0);</string>
        </item>
        <item>
         <widget class="QDial" name="in_fahr">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0, 170, 0);</string>
+         </property>
          <property name="maximum">
           <number>210</number>
          </property>
@@ -83,7 +89,7 @@ color: rgb(0, 0, 0);</string>
        <item>
         <widget class="QLCDNumber" name="out_kelvin">
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(170, 85, 255);
+          <string notr="true">background-color: rgb(170, 85, 20);
 color: rgb(0, 0, 0);</string>
          </property>
          <property name="value" stdset="0">
@@ -96,6 +102,9 @@ color: rgb(0, 0, 0);</string>
        </item>
        <item>
         <widget class="QDial" name="in_kelvin">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(0, 170, 0);</string>
+         </property>
          <property name="minimum">
           <number>255</number>
          </property>

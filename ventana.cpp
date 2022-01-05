@@ -12,6 +12,9 @@ Ventana::Ventana(QWidget *parent)
 
     connect(ui->in_fahr, SIGNAL(valueChanged(int)),
             this, SLOT(fahr_conv(int)));
+    connect(ui->in_kelvin, SIGNAL(valueChanged(int)),
+            this, SLOT(kelv_conv(int)));
+
 
 }
 
@@ -25,6 +28,9 @@ void Ventana::cent_conv(int i)
     if(ui->in_cent->hasFocus()){
         float fahr = (i * 9.0/5) + 32;
         ui->in_fahr->setValue(fahr);
+        float kelvin = i + 273.15;
+        ui->in_kelvin->setValue(kelvin);
+
     }
 }
 
@@ -33,6 +39,9 @@ void Ventana::fahr_conv(int i)
     if(ui->in_fahr->hasFocus()){
         float cent = (i - 32) * 5.0/9;
         ui->in_cent->setValue(cent);
+        float kelvin = (i - 32) * 5.0/9 + 273.15;
+        ui->in_kelvin->setValue(kelvin);
+
     }
 }
 
@@ -41,6 +50,9 @@ void Ventana::kelv_conv(int i)
     if(ui->in_kelvin->hasFocus()){
         float cent = i - 273.15;
         ui->in_cent->setValue(cent);
+        float fahr = (i - 273.15) * 9.0/5 + 32;
+        ui->in_fahr->setValue(fahr);
+
     }
 }
 
